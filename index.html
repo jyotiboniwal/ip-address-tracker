@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- leaflet file -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- leaflet Js -->
+  </head>
+  <body>
+    <div class="background">
+      <h2 class="background__heading">Ip Address Tracker</h2>
+      <div class="search">
+        <input
+          type="text"
+          class="search__input"
+          id="userInput"
+          placeholder="Search for any Ip address or domain"
+        />
+        <button class="search__button" id="searchBtn" type="button">
+          <img class="search__arrow" src="images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <div class="results">
+      <div class="results__data">
+        <p class="results__heading">IP ADDRESS</p>
+        <p class="results__data" id="ip"></p>
+      </div>
+      <div class="results__data">
+        <p class="results__heading">LOCATION</p>
+        <p class="results__data" id="location"></p>
+      </div>
+      <div class="results__data">
+        <p class="results__heading">TIMEZONE</p>
+        <p class="results__data" id="timezone"></p>
+      </div>
+      <div class="results__data">
+        <p class="results__heading">ISP</p>
+        <p class="results__data" id="isp"></p>
+      </div>
+    </div>
+
+    <div id="map"></div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Jyoti Boniwal</a>.
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="Js/script.js" defer></script>
+  </body>
+</html>
