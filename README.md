@@ -13,7 +13,7 @@ A web app that shows your IP address location on a map and lets you search for a
 
 ## Live Demo
 
-https://your-project-link.com
+https://ipaddress-tracker-app.netlify.app
 
 ## Tech Stack
 
@@ -26,10 +26,10 @@ https://your-project-link.com
 ## Installation
 
 1. Clone the repo
-   git clone https://github.com/your-username/project-name.git
+   git clone https://github.com/jyotiboniwal/ip-address-tracker.git
 
 2. Open the folder
-   cd project-name
+   cd ip-address-tracker
 
 3. Open index.html in browser
 
